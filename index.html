@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="aws-amazon-logo2.png" type="image/x-icon">
 </head>
-<body class="bg-light">
+<body>
 
     <div class="fixed-cart">
-        <a href="/carrinho" class="btn btn-warning rounded-circle p-3 shadow-lg">
+        <a href="/carrinho" class="btn btn-warning rounded-circle shadow-lg">
             <img src="https://cdn-icons-png.flaticon.com/256/126/126510.png" alt="Carrinho" width="24" height="24">
         </a>
     </div>
@@ -19,20 +19,20 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-amazon-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="aws-amazon-logo.png" alt="Amazon" height="30" class="d-inline-block align-text-top">
+                <img src="aws-amazon-logo.png" alt="Amazon" height="30">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#categorias">Categorias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#categorias">Categorias</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#produtos">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#contato">Contato</a></li>
                 </ul>
-                <form class="d-flex" action="/buscar" method="GET" role="search">
-                    <input class="form-control me-2" type="search" name="busca" placeholder="Digite o que procura..." aria-label="Search">
+                <form class="d-flex justify-content-center" action="/buscar" method="GET">
+                    <input class="form-control me-2" type="search" name="busca" placeholder="O que você procura?">
                     <button class="btn btn-amazon" type="submit">Buscar</button>
                 </form>
             </div>
@@ -40,56 +40,54 @@
     </nav>
 
     <main>
-        <section id="home" class="mb-5">
-            <div class="w-100">
-                <img src="https://http2.mlstatic.com/D_NQ_739372-MLA113147944067_062026-OO.webp" alt="Banner principal da loja" class="img-fluid w-100">
-            </div>
-            <div class="container text-center py-5">
-                <h1 class="display-4 fw-bold">Bem-vindo à Amazon Unofficial</h1>
-                <p class="lead text-muted">As melhores ofertas e categorias selecionadas para você.</p>
+        <section id="home" class="mb-5 text-center">
+            <img src="https://http2.mlstatic.com/D_NQ_739372-MLA113147944067_062026-OO.webp" alt="Banner principal" class="img-fluid w-100">
+            <div class="container py-5">
+                <h1 class="display-4 fw-bold text-dark">Bem-vindo à Amazon Unofficial</h1>
+                <p class="lead text-secondary mx-auto" style="max-width: 600px;">As melhores ofertas e categorias selecionadas especialmente para você com a interface moderna do Bootstrap.</p>
             </div>
         </section>
 
-        <section id="categorias" class="container py-5 mb-5">
-            <h2 class="text-center mb-4 pb-2 border-bottom">Nossas Categorias</h2>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+        <section id="categorias" class="container py-5 mb-5 text-center">
+            <h2 class="fw-bold mb-5 pb-2 border-bottom d-inline-block px-4">Nossas Categorias</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 justify-content-center">
                 
                 <div class="col">
-                    <div class="card h-100 text-center shadow-sm">
-                        <div class="card-body d-flex flex-column justify-content-center">
-                            <img src="https://via.placeholder.com/150?text=Celular" class="card-img-top mx-auto my-3" style="max-width: 100px;" alt="Celulares e Notebooks">
-                            <h5 class="card-title">Celulares e Notebooks</h5>
-                            <a href="#Celulares_e_Notebooks" class="btn btn-outline-dark btn-sm mt-auto">Ver mais</a>
+                    <div class="card h-100 shadow-sm align-items-center p-3">
+                        <img src="https://via.placeholder.com/150?text=Celular" class="card-img-top my-3" style="max-width: 100px;" alt="Celulares">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold">Celulares e Notebooks</h5>
+                            <a href="#Celulares_e_Notebooks" class="btn btn-outline-dark btn-sm mt-3">Ver mais</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col">
-                    <div class="card h-100 text-center shadow-sm">
-                        <div class="card-body d-flex flex-column justify-content-center">
-                            <img src="https://via.placeholder.com/150?text=Moveis" class="card-img-top mx-auto my-3" style="max-width: 100px;" alt="Móveis para Casa">
-                            <h5 class="card-title">Móveis Para Casa</h5>
-                            <a href="#moveis-casa" class="btn btn-outline-dark btn-sm mt-auto">Ver mais</a>
+                    <div class="card h-100 shadow-sm align-items-center p-3">
+                        <img src="https://via.placeholder.com/150?text=Moveis" class="card-img-top my-3" style="max-width: 100px;" alt="Móveis">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold">Móveis Para Casa</h5>
+                            <a href="#moveis-casa" class="btn btn-outline-dark btn-sm mt-3">Ver mais</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col">
-                    <div class="card h-100 text-center shadow-sm">
-                        <div class="card-body d-flex flex-column justify-content-center">
-                            <img src="https://via.placeholder.com/150?text=Carro" class="card-img-top mx-auto my-3" style="max-width: 100px;" alt="Para o seu Carro">
-                            <h5 class="card-title">Para o seu Carro</h5>
-                            <a href="#Carro" class="btn btn-outline-dark btn-sm mt-auto">Ver mais</a>
+                    <div class="card h-100 shadow-sm align-items-center p-3">
+                        <img src="https://via.placeholder.com/150?text=Carro" class="card-img-top my-3" style="max-width: 100px;" alt="Carro">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold">Para o seu Carro</h5>
+                            <a href="#Carro" class="btn btn-outline-dark btn-sm mt-3">Ver mais</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col">
-                    <div class="card h-100 text-center shadow-sm">
-                        <div class="card-body d-flex flex-column justify-content-center">
-                            <img src="https://via.placeholder.com/150?text=TV" class="card-img-top mx-auto my-3" style="max-width: 100px;" alt="TVs">
-                            <h5 class="card-title">TVs</h5>
-                            <a href="#TVs" class="btn btn-outline-dark btn-sm mt-auto">Ver mais</a>
+                    <div class="card h-100 shadow-sm align-items-center p-3">
+                        <img src="https://via.placeholder.com/150?text=TV" class="card-img-top my-3" style="max-width: 100px;" alt="TVs">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold">TVs</h5>
+                            <a href="#TVs" class="btn btn-outline-dark btn-sm mt-3">Ver mais</a>
                         </div>
                     </div>
                 </div>
@@ -97,71 +95,71 @@
             </div>
         </section>
 
-        <section id="produtos" class="container py-5 mb-5">
-            <h2 class="text-center mb-4 pb-2 border-bottom">Produtos em Destaque</h2>
-            <div class="table-responsive shadow-sm rounded">
-                <table class="table table-hover table-striped align-middle mb-0 bg-white">
+        <section id="produtos" class="container py-5 mb-5 text-center">
+            <h2 class="fw-bold mb-5 pb-2 border-bottom d-inline-block px-4">Produtos em Destaque</h2>
+            <div class="table-responsive shadow mx-auto" style="max-width: 900px;">
+                <table class="table table-hover table-striped align-middle mb-0 bg-white text-center">
                     <thead class="table-dark">
                         <tr>
-                            <th scope="col" style="width: 150px;">Imagem</th>
+                            <th scope="col" style="width: 120px;">Imagem</th>
                             <th scope="col">Produto</th>
-                            <th scope="col" class="text-end">Ação</th>
+                            <th scope="col" style="width: 150px;">Ação</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><img src="https://via.placeholder.com/60?text=iPhone" alt="iPhone 17 Pro Max" class="img-thumbnail" width="60"></td>
+                            <td><img src="https://via.placeholder.com/60?text=iPhone" alt="iPhone" class="img-thumbnail" width="60"></td>
                             <td><span class="fw-semibold">iPhone 17 Pro Max</span></td>
-                            <td class="text-end"><a href="#iPhone 17 Pro Max" class="btn btn-amazon btn-sm">Visualizar</a></td>
+                            <td><a href="#iPhone 17 Pro Max" class="btn btn-amazon btn-sm px-3">Visualizar</a></td>
                         </tr>
                         <tr>
-                            <td><img src="https://via.placeholder.com/60?text=S26" alt="Samsung S26 Ultra" class="img-thumbnail" width="60"></td>
+                            <td><img src="https://via.placeholder.com/60?text=S26" alt="Samsung" class="img-thumbnail" width="60"></td>
                             <td><span class="fw-semibold">Samsung Galaxy S26 Ultra</span></td>
-                            <td class="text-end"><a href="#samsung Galaxy S26 Ultra" class="btn btn-amazon btn-sm">Visualizar</a></td>
+                            <td><a href="#samsung Galaxy S26 Ultra" class="btn btn-amazon btn-sm px-3">Visualizar</a></td>
                         </tr>
                         <tr>
-                            <td><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSHtkfvUf-5pEqBhwIdQTy6mHrMv2cVHFNwSASppXdqwYE8Rne4DqIX6J9jXvJcxglTsqFTWBJksxbKb84gkzmoFUP_0gM33svpMUCrqJLh0akZUtXkJBTFPw" alt="Óleo" class="img-thumbnail" width="60"></td>
+                            <td><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSHtkfvUf-5pEqBhwIdQTy6mHrMv2cVHFNwSASppXdqwYE8Rne4DqIX6J9jXvJcxglTsqFTWBJksxbKb84gkzmoFUP_0gM33svpMUCrqJLh08akZUtXkJBTFPw" alt="Óleo" class="img-thumbnail" width="60"></td>
                             <td><span class="fw-semibold">Óleo Lubrificante</span></td>
-                            <td class="text-end"><a href="#Óleo Lubrificante" class="btn btn-amazon btn-sm">Visualizar</a></td>
+                            <td><a href="#Óleo Lubrificante" class="btn btn-amazon btn-sm px-3">Visualizar</a></td>
                         </tr>
                         <tr>
-                            <td><img src="https://via.placeholder.com/60?text=TV+65" alt="TV 65" class="img-thumbnail" width="60"></td>
+                            <td><img src="https://via.placeholder.com/60?text=TV+65" alt="TV" class="img-thumbnail" width="60"></td>
                             <td><span class="fw-semibold">TV LED Samsung 65"</span></td>
-                            <td class="text-end"><a href="#TV LED Samsung 65" class="btn btn-amazon btn-sm">Visualizar</a></td>
+                            <td><a href="#TV LED Samsung 65" class="btn btn-amazon btn-sm px-3">Visualizar</a></td>
                         </tr>
                         <tr>
                             <td><img src="https://mediacdn.simonetti.com.br/media/catalog/product/cache/f777e0fcb693fc2eda14df7367849c5a/9/3/93070.jpg" alt="Cozinha" class="img-thumbnail" width="60"></td>
-                            <td><span class="fw-semibold">Cozinha Compacta Plena com 2 peças | Demóbile</span></td>
-                            <td class="text-end"><a href="#TVs" class="btn btn-amazon btn-sm">Visualizar</a></td>
+                            <td><span class="fw-semibold">Cozinha Compacta Plena 2 peças</span></td>
+                            <td><a href="#TVs" class="btn btn-amazon btn-sm px-3">Visualizar</a></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-        <section id="contato" class="container py-5 mb-5" style="max-width: 600px;">
+        <section id="contato" class="container py-5 mb-5 mx-auto" style="max-width: 550px;">
             <div class="card shadow">
                 <div class="card-body p-4">
-                    <h2 class="card-title text-center mb-4">Fale Conosco</h2>
+                    <h2 class="card-title text-center fw-bold mb-4">Fale Conosco</h2>
                     <form action="/enviar-contato" method="POST">
-                        <div class="mb-3">
-                            <label for="nome" class="form-label">Nome:</label>
+                        <div class="mb-3 text-start">
+                            <label for="nome" class="form-label fw-semibold">Nome:</label>
                             <input type="text" id="nome" name="nome" class="form-control" placeholder="Seu nome completo" required>
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">E-mail:</label>
-                            <input type="email" id="email" name="email" class="form-control" placeholder="nome@exemplo.com" required>
+                        <div class="mb-3 text-start">
+                            <label for="email" class="form-label fw-semibold">E-mail:</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="exemplo@email.com" required>
                         </div>
-                        <div class="mb-3">
-                            <label for="assunto" class="form-label">Assunto:</label>
+                        <div class="mb-3 text-start">
+                            <label for="assunto" class="form-label fw-semibold">Assunto:</label>
                             <input type="text" id="assunto" name="assunto" class="form-control" placeholder="Motivo do contato" required>
                         </div>
-                        <div class="mb-3">
-                            <label for="mensagem" class="form-label">Mensagem:</label>
-                            <textarea id="mensagem" name="mensagem" class="form-control" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+                        <div class="mb-4 text-start">
+                            <label for="mensagem" class="form-label fw-semibold">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
                         </div>
                         <div class="d-grid">
-                            <button type="submit" class="btn btn-amazon btn-lg">Enviar Mensagem</button>
+                            <button type="submit" class="btn btn-amazon btn-lg text-dark">Enviar Mensagem</button>
                         </div>
                     </form>
                 </div>
@@ -169,21 +167,21 @@
         </section>
     </main>
 
-    <footer class="bg-amazon-light text-white pt-5 pb-3">
+    <footer class="bg-amazon-light text-white pt-5 pb-4 text-center">
         <div class="container">
-            <div class="row text-center text-md-start">
-                <div class="col-md-6 mb-4">
-                    <h5>Siga-nos nas Redes Sociais</h5>
-                    <ul class="list-unstyled d-flex justify-content-center justify-content-md-start gap-3 mt-3">
-                        <li><a href="https://instagram.com" target="_blank" class="text-white text-decoration-none bg-secondary px-3 py-2 rounded">Instagram</a></li>
-                        <li><a href="https://facebook.com" target="_blank" class="text-white text-decoration-none bg-secondary px-3 py-2 rounded">Facebook</a></li>
-                        <li><a href="https://linkedin.com" target="_blank" class="text-white text-decoration-none bg-secondary px-3 py-2 rounded">LinkedIn</a></li>
-                    </ul>
+            <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center">
+                <div class="col text-md-start">
+                    <h5 class="fw-bold mb-3">Siga-nos nas Redes Sociais</h5>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-2">
+                        <a href="https://instagram.com" target="_blank" class="text-white text-decoration-none bg-dark px-3 py-2 rounded small">Instagram</a>
+                        <a href="https://facebook.com" target="_blank" class="text-white text-decoration-none bg-dark px-3 py-2 rounded small">Facebook</a>
+                        <a href="https://linkedin.com" target="_blank" class="text-white text-decoration-none bg-dark px-3 py-2 rounded small">LinkedIn</a>
+                    </div>
                 </div>
-                <div class="col-md-6 text-md-end mb-4">
-                    <p class="mb-1">&copy; 2026 Amazon AWS Serviços Brasil Ltda.</p>
-                    <p class="small text-muted mb-3">Todos os direitos reservados.</p>
-                    <p class="small mb-0">Desenvolvido por <a href="https://www.instagram.com/miguel_s_freitas/" target="_blank" rel="noopener noreferrer" class="text-warning text-decoration-none fw-semibold">Miguel S Freitas</a></p>
+                <div class="col text-md-end">
+                    <p class="mb-1 small">&copy; 2026 Amazon AWS Serviços Brasil Ltda.</p>
+                    <p class="text-muted small mb-2">Todos os direitos reservados.</p>
+                    <p class="small mb-0">Desenvolvido por <a href="https://www.instagram.com/miguel_s_freitas/" target="_blank" rel="noopener noreferrer" class="text-warning text-decoration-none fw-bold">Miguel S Freitas</a></p>
                 </div>
             </div>
         </div>
